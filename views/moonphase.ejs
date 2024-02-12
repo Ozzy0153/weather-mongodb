@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Phase Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="navigation mb-4">
+        <a href="/weather-app" class="btn btn-primary">Local Weather</a>
+        <a href="/air-quality" class="btn btn-secondary">Air Quality</a>
+        <a href="/moonphase" class="btn btn-secondary">Moon Phase</a>
+        <a href="/history" class="btn btn-info">View Search History</a>
+        <a href="/logout" class="btn btn-info">Logout</a>
+    </div>
+    <h1 class="text-center mb-4">Moon Phase Information</h1>
+    <div class="row justify-content-center mb-4">
+        <div class="col-12 col-md-6">
+            <div class="input-group">
+                <label for="cityInput"></label><input type="text" id="cityInput" class="form-control" placeholder="Enter City Name">
+                <div class="input-group-append">
+                    <button id="fetchMoonPhase" class="btn btn-primary">Get Moon Phase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="moonPhaseInfo" class="mt-4"></div>
+</div>
+
+<footer class="text-center mt-4 mb-3">
+    Orazaly Makambet SE-2206
+</footer>
+
+<script src="/moonphase.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

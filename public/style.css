@@ -1,0 +1,232 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #e3f2fd;
+}
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+#city-input-container {
+    margin-bottom: 2rem;
+}
+
+
+#cityInput{
+    font-size: 20px;
+}
+
+#weather-button{
+    font-size: 20px;
+}
+
+#content {
+    display: flex;
+    flex: 1;
+}
+
+#current-weather {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+#weather-info p:first-child {
+    font-size: 24px;
+}
+
+.weather-map-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.weather-info {
+    padding: 1rem;
+    background: #e1f5fe;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+
+    max-width: 30%;
+}
+
+.map {
+
+    height: 400px;
+    width: 70%;
+}
+
+
+#extended-forecast {
+    text-align: center;
+    margin: 20px;
+}
+#extended-forecast-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+.forecast-container {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #e1f5fe; /* Lighter blue background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the forecast heading and days */
+}
+
+.forecast-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333; /* Dark grey color for the text */
+    font-size: 1.75rem; /* Slightly larger font size */
+    font-weight: bold; /* Make the heading bold */
+}
+
+.forecast-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
+    gap: 1rem; /* Space between cards */
+    width: 100%; /* Full width to align with the forecast container */
+    padding: 0; /* Reset padding */
+}
+
+.forecast-day {
+    padding: 1rem;
+    background: #ffffff; /* White background for cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+    display: flex;
+    flex-direction: column; /* Stack card content vertically */
+    justify-content: space-between; /* Space out content within card */
+    align-items: center; /* Center content horizontally */
+}
+
+.forecast-day p {
+    margin: 0.5rem 0; /* Add margin to paragraphs to separate them */
+}
+
+@media (max-width: 768px) {
+    .forecast-days {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust card size for smaller screens */
+    }
+}
+
+
+.day-of-week {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#hourly-historical-data {
+    margin-top: 20px;
+}
+
+.hourly-data-item {
+    margin-bottom: 10px;
+}
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 24px);
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    width: auto;
+    padding: 10px 20px;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.welcome-section {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto; /* Center the section */
+    text-align: center;
+}
+.welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.welcome-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+

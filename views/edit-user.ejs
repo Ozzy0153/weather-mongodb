@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h1>Edit User</h1>
+    <form action="/admin/update/<%= user._id %>" method="POST">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required class="form-control" value="<%= user.username %>">
+        </div>
+        <div class="form-group">
+            <label for="password">New Password (leave blank to keep current):</label>
+            <input type="password" id="password" name="password" class="form-control">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" id="isAdmin" name="isAdmin" class="form-check-input" <%= user.isAdmin ? 'checked' : '' %>>
+            <label for="isAdmin" class="form-check-label">Is Admin?</label>
+        </div>
+        <button type="submit" class="btn btn-success">Update User</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+</script>
+</body>
+</html>

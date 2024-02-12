@@ -21,7 +21,7 @@ WeatherApp is a full-stack web application that provides users with weather fore
 
 2. **Navigate to the project directory**
    ```bash
-   cd WeatherApp
+   cd weather-mongodb
 
 3. **Install dependencies**
    ```bash
@@ -46,7 +46,7 @@ Ensure you have API keys for each of these services.
 
 This project is deployed on Render. You can access the deployed application at:
 
-- Deployed Link: `<[Deployed_Application_URL](https://weather-app-with-mongodb.onrender.com/)>`
+- Deployed Link: `<https://weather-app-with-mongodb.onrender.com/>`
 
 
 ## Administrative Functionality
